@@ -4,7 +4,7 @@ metadata:
    name: vertex-rc
 spec: 
    replicas: 3
-selectors: 
+selector: 
      app: myvertexpod
      version: 2.6.2
 template: 
