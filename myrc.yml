@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: V1
 kind: ReplicationController 
 metadata: 
    name: vertex-rc
@@ -14,7 +14,7 @@ template:
           version: 2.6.2
  spec: 
          containers:
-         - name: myimage
+         - name: mynginx
            image: nginx
            ports:
            - containerPort: 80       
