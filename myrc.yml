@@ -5,17 +5,17 @@ metadata:
 spec: 
    replicas: 5
    selector: 
-     app: mynginx
+     app: vertexapp
      version: 2.6.2
    template: 
      metadata: 
        labels:
-          app: mynginx
+          app: vertexapp
           version: 2.6.2
      spec: 
          containers:
-         - name: mynginx-container
-           image: nginx
+         - name: mytomcat-container
+           image: aishwarya5502/myjavaimage16nov22
            ports:
-           - containerPort: 80       
+           - containerPort: 8080      
   
