@@ -3,18 +3,18 @@ kind: ReplicationController
 metadata: 
    name: vertex-rc
 spec: 
-   replicas: 3
+   replicas: 5
    selector: 
-     app: myvertexpod
+     app: mynginx
      version: 2.6.2
    template: 
      metadata: 
        labels:
-          app: myvertexpod
+          app: mynginx
           version: 2.6.2
      spec: 
          containers:
-         - name: mynginx
+         - name: mynginx-container
            image: nginx
            ports:
            - containerPort: 80       
