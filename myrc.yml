@@ -6,12 +6,12 @@ spec:
    replicas: 5
    selector: 
      app: vertexapp
-     version: 2.6.2
+     #version: 2.6.2
    template: 
      metadata: 
        labels:
           app: vertexapp
-          version: 2.6.2
+          #version: 2.6.2
      spec: 
          containers:
          - name: mytomcat-container
